@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Main container div -->
     <div class="container">
+      <!-- Heading for the password generator -->
       <h1>Generate a <br /><span>Random Password</span></h1>
+      <!-- Display div containing password input and copy button -->
       <div class="display">
+        <!-- Input field to display generated password -->
         <input type="text" id="password" placeholder="Password" />
+        <!-- Copy button with image, linked to copyPassword() function -->
         <img src="images/copy.png" onclick="copyPassword()" />
       </div>
+      <!-- Button to trigger the password generation, linked to createPassword() function -->
       <button onclick="createPassword()">
         <img src="images/generate.png" />Generate Password
       </button>
     </div>
 
+    <!-- Script tag linking to external JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>
